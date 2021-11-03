@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/hesaptext"
+        android:layout_width="253dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="E mail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pintext"
+        android:layout_width="253dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesaptext" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="signInClicked"
+        android:text="Giriş Yap"
+        app:layout_constraintStart_toStartOf="@+id/pintext"
+        app:layout_constraintTop_toBottomOf="@+id/pintext" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="signUpClicked"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="@+id/pintext"
+        app:layout_constraintTop_toBottomOf="@+id/pintext" />
+</androidx.constraintlayout.widget.ConstraintLayout>
